@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7));
+    height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-body a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-title {
+    margin-bottom: 2rem;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #5d4037;
+}
+
+footer {
+    background-color: #5d4037;
+    ;
+    color: #f8f0e3;
+}
+
+.section-title {
+    color: #5d4037;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+body.dark-mode .hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    border-color: #444;
+}
+
+body.dark-mode .section-title {
+    color: #d4af7a;
+}
+
+body.dark-mode footer {
+    background-color: #1a150f;
+    color: #e0d6c5;
+}
+
+/* Zoom dinâmico */
+body.zoomed {
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+}
